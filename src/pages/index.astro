@@ -3,38 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pedralva Tem</title>
+  <title>Pedralva Tem — Tudo de Pedralva em um só lugar</title>
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f7f8fa;
       color: #142c4b;
     }
+
     header {
       background: #142c4b;
-      color: white;
-      padding: 35px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
-    .marca {
-      display: inline-block;
-      background: #f5bf36;
-      color: #142c4b;
-      padding: 12px 25px;
-      border-radius: 12px;
-      font-size: 36px;
-      font-weight: bold;
+
+    .logotipo {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      margin: 0 auto;
     }
-    .marca span { color: #008f9d; }
-    header p { font-size: 17px; }
+
     main {
       max-width: 1100px;
       margin: auto;
       padding: 35px 20px;
     }
-    h2 { text-align: center; }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+    }
+
     .busca {
       display: block;
       width: 100%;
@@ -45,12 +49,14 @@
       border-radius: 12px;
       font-size: 17px;
     }
+
     .categorias {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 18px;
       margin-top: 30px;
     }
+
     .categoria {
       background: white;
       border-radius: 14px;
@@ -61,6 +67,7 @@
       font-weight: bold;
       border-bottom: 5px solid #f5bf36;
     }
+
     footer {
       text-align: center;
       padding: 25px;
@@ -70,116 +77,25 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="marca">PEDRALVA <span>TEM</span></div>
-    <p>TUDO DE PEDRALVA EM UM SÓ LUGAR</p>
+    <img
+      class="logotipo"
+      src="/Logo%20colorido%20%E2%80%9CPedralva%20Tem%E2%80%9D%20aprovado.png"
+      alt="Pedralva Tem — Tudo de Pedralva em um só lugar"
+    />
   </header>
 
   <main>
-    <h2>O que você procura em Pedralva?</h2>
-    <input class="busca" type="search"
-      placeholder="Buscar comércio, serviços e muito mais..." />
+    <h1>O que você procura em Pedralva?</h1>
 
-    <section class="categorias">
-      <div class="categoria">Hospedagem</div>
-      <div class="categoria">Restaurantes</div>
-      <div class="categoria">Comércio</div>
-      <div class="categoria">Serviços</div>
-      <div class="categoria">Turismo e Lazer</div>
-      <div class="categoria">Saúde e Bem-estar</div>
-      <div class="categoria">Alimentação</div>
-      <div class="categoria">Transporte</div>
-    </section>
-  </main>
-
-  <footer>
-    PEDRALVA TEM — Tudo de Pedralva em um só lugar
-  </footer>
-</body>
-</html>
-
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pedralva Tem</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f8fa;
-      color: #142c4b;
-    }
-    header {
-      background: #142c4b;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
-    .marca {
-      display: inline-block;
-      background: #f5bf36;
-      color: #142c4b;
-      padding: 12px 25px;
-      border-radius: 12px;
-      font-size: 36px;
-      font-weight: bold;
-    }
-    .marca span { color: #008f9d; }
-    header p { font-size: 17px; }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 35px 20px;
-    }
-    h2 { text-align: center; }
-    .busca {
-      display: block;
-      width: 100%;
-      max-width: 650px;
-      margin: 25px auto;
-      padding: 16px;
-      border: 2px solid #008f9d;
-      border-radius: 12px;
-      font-size: 17px;
-    }
-    .categorias {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 18px;
-      margin-top: 30px;
-    }
-    .categoria {
-      background: white;
-      border-radius: 14px;
-      padding: 28px 15px;
-      text-align: center;
-      box-shadow: 0 3px 12px #00000012;
-      font-size: 19px;
-      font-weight: bold;
-      border-bottom: 5px solid #f5bf36;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-      background: #142c4b;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="marca">PEDRALVA <span>TEM</span></div>
-    <p>TUDO DE PEDRALVA EM UM SÓ LUGAR</p>
-  </header>
-
-  <main>
-    <h2>O que você procura em Pedralva?</h2>
-    <input class="busca" type="search"
-      placeholder="Buscar comércio, serviços e muito mais..." />
+    <input
+      class="busca"
+      type="search"
+      placeholder="Buscar comércio, serviços e muito mais..."
+      aria-label="Buscar comércio e serviços"
+    />
 
     <section class="categorias">
       <div class="categoria">Hospedagem</div>
